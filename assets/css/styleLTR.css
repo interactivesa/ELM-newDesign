@@ -347,19 +347,31 @@ img {
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
     border: unset;
-    padding: 35px 25px;
+    padding: 15px 25px;
     border-radius: 8px;
-    right: 0;
     min-width: 350px;
     width: auto;
-    top: 85%;
+    top: 100%;
     left: -50%;
     text-align: left;
     background-color: #E5E9F5;
     border-radius: 0;
-    min-height: 250px;
-    -webkit-box-shadow: 0 10px 40px #0000003d;
-            box-shadow: 0 10px 40px #0000003d;
+    -webkit-box-shadow: 0 10px 40px #00000024;
+            box-shadow: 0 10px 40px #00000024;
+    border-radius: 0;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    gap: 40px;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu h4.title {
     font-size: 22px;
@@ -380,12 +392,38 @@ img {
     background-color: transparent !important;
     -webkit-transition: .3s;
     transition: .3s;
+    padding: 0;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a:hover {
     color: #2E9FDA;
   }
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li:last-child {
     margin-bottom: 0;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    left: 0px;
+    top: -23px;
+    background-image: url(../images/shared/menu-bg.svg);
+    background-repeat: no-repeat;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    right: 0px;
+    bottom: -23px;
+    background-image: url(../images/shared/menu-bg.svg);
+    background-repeat: no-repeat;
+  }
+  .menuWithBanner .navbarMenu .nav-item.dropdown:last-child .dropdown-menu {
+    left: -150%;
   }
 }
 
@@ -490,7 +528,7 @@ img {
 }
 
 .home-tatawor .main-box h3 {
-  font-size: 80px;
+  font-size: 75px;
   color: #0C1D46;
   margin-bottom: 20px;
 }
@@ -603,7 +641,7 @@ img {
 }
 
 .home-ebtkar .main-box h3 {
-  font-size: 80px;
+  font-size: 75px;
   color: #0C1D46;
   margin-bottom: 20px;
 }
@@ -727,7 +765,7 @@ img {
 }
 
 .home-Investors .main-box h3 {
-  font-size: 80px;
+  font-size: 75px;
   color: #0C1D46;
   margin-bottom: 20px;
 }
@@ -972,7 +1010,7 @@ img {
 }
 
 .home-news .main-box h3 {
-  font-size: 80px;
+  font-size: 75px;
   color: #0C1D46;
   margin-bottom: 20px;
 }
@@ -1309,6 +1347,649 @@ img {
   background-image: url(../images/shared/old-chevron-left-3.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.mediaRel-main {
+  background-color: #E5E9F5;
+  padding-bottom: 70px;
+}
+
+.mediaRel-main .main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 40px;
+  height: 100%;
+}
+
+.mediaRel-main .main-box h3 {
+  font-size: 75px;
+  color: #0C1D46;
+  margin-bottom: 40px;
+}
+
+.mediaRel-main .main-box h3 span {
+  display: block;
+}
+
+.mediaRel-main .main-box p {
+  font-size: 21px;
+  font-family: "IBM-Li";
+  color: #0C1D46;
+}
+
+.mediaRel-main .img-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mediaRel-main .container2 .col-lg-4 {
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+.mediaRel-main .secnd-sec {
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+.mediaRel-main .secnd-sec p {
+  font-size: 27px;
+  font-family: "IBM-Med";
+  color: #0C1D46;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.mediaRel-main .btn-shaped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+  color: #FFF;
+  position: relative;
+  padding: 5px 20px;
+  padding-right: 30px;
+  height: 100px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.mediaRel-main .btn-shaped span {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+.mediaRel-main .btn-shaped .img-cont {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  text-align: center;
+}
+
+.mediaRel-main .btn-shaped .img-cont::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -5px;
+  border: 2px solid #F6F7FB;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.mediaRel-main .btn-shaped .img-cont img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+  position: relative;
+}
+
+.mediaRel-main .btn-shaped::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #E5E9F5;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -3px;
+  top: -10px;
+}
+
+.mediaRel-main .btn-shaped::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #E5E9F5;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  right: -3px;
+  bottom: -10px;
+}
+
+.mediaRel-main .btn-shaped.color1 {
+  background-color: #F16845;
+}
+
+.mediaRel-main .btn-shaped.color1 .img-cont img {
+  background-color: #F16845;
+}
+
+.mediaRel-main .btn-shaped.color2 {
+  background-color: #2E9FDA;
+}
+
+.mediaRel-main .btn-shaped.color2 .img-cont img {
+  background-color: #2E9FDA;
+}
+
+.mediaRel-main .btn-shaped.color3 {
+  background-color: #8139D0;
+}
+
+.mediaRel-main .btn-shaped.color3 .img-cont img {
+  background-color: #8139D0;
+}
+
+.mediaRel-main .btn-shaped:hover .img-cont img {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.download-logo {
+  background-color: #E5E9F5;
+  padding-bottom: 95px;
+  padding-top: 100px;
+}
+
+.download-logo .main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 100px;
+  max-width: 700px;
+}
+
+.download-logo .main-box h3 {
+  font-size: 75px;
+  color: #0C1D46;
+  margin-bottom: 40px;
+}
+
+.download-logo .main-box p {
+  font-size: 36px;
+  font-family: "IBM-XLi";
+  color: #0C1D46;
+}
+
+.download-logo .downloadLogo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.download-logo .download-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.download-logo .download-btn .btn-shaped {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 25px;
+  color: #FFF;
+  position: relative;
+  padding: 5px 20px;
+  padding-right: 30px;
+  height: 100px;
+  -webkit-transition: .3s;
+  transition: .3s;
+  margin-top: 170px;
+  width: 340px;
+}
+
+.download-logo .download-btn .btn-shaped span {
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+}
+
+.download-logo .download-btn .btn-shaped .img-cont {
+  position: relative;
+  width: 30px;
+  height: 40px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  text-align: center;
+}
+
+.download-logo .download-btn .btn-shaped .img-cont::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -5px;
+  border: 2px solid #F6F7FB;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+
+.download-logo .download-btn .btn-shaped .img-cont img {
+  -webkit-transition: .3s;
+  transition: .3s;
+  z-index: 2;
+  position: relative;
+}
+
+.download-logo .download-btn .btn-shaped::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #E5E9F5;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -3px;
+  top: -10px;
+}
+
+.download-logo .download-btn .btn-shaped::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #E5E9F5;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  right: -3px;
+  bottom: -10px;
+}
+
+.download-logo .download-btn .btn-shaped.color2 {
+  background-color: #2E9FDA;
+}
+
+.download-logo .download-btn .btn-shaped.color2 .img-cont img {
+  background-color: #2E9FDA;
+}
+
+.download-logo .download-btn .btn-shaped:hover .img-cont img {
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.logo-colors {
+  padding: 235px 0;
+  background-color: #FCFCFE;
+  position: relative;
+}
+
+.logo-colors::before {
+  content: "";
+  position: absolute;
+  width: 43%;
+  height: 97%;
+  left: 0;
+  bottom: 0;
+  background-image: url(../images/media-r/shape-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo-colors .main-box {
+  margin-bottom: 255px;
+}
+
+.logo-colors .main-box h3 {
+  font-size: 75px;
+  color: #0C1D46;
+  margin-bottom: 20px;
+}
+
+.logo-colors .content-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
+.logo-colors .content-box .logoColorCard .img-box {
+  width: 67px;
+  height: 67px;
+  margin-bottom: 35px;
+}
+
+.logo-colors .content-box .logoColorCard .cont-box {
+  max-width: 230px;
+}
+
+.logo-colors .content-box .logoColorCard .cont-box h5 {
+  font-size: 26px;
+  font-family: 'IBM-Med';
+  color: #0C1D46;
+  margin-bottom: 10px;
+}
+
+.logo-colors .content-box .logoColorCard .cont-box p {
+  font-size: 21px;
+  font-family: 'IBM-Li';
+  color: #0C1D46;
+}
+
+.logo-details {
+  padding-top: 105px;
+  padding-bottom: 85px;
+  background-color: #FCFCFE;
+}
+
+.logo-details .main-box {
+  margin-bottom: 20px;
+}
+
+.logo-details .main-box h3 {
+  font-size: 75px;
+  color: #0C1D46;
+}
+
+.logo-details .logo-with-lines {
+  position: relative;
+  text-align: center;
+  padding-left: 12%;
+}
+
+.logo-details .logo-with-lines .contentAb {
+  position: absolute;
+}
+
+.logo-details .logo-with-lines .contentAb h5 {
+  font-size: 28px;
+  font-family: 'IBM-Med';
+  color: #0C1D46;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.logo-details .logo-with-lines .contentAb p {
+  font-size: 23px;
+  line-height: 1.2;
+  font-family: 'IBM-Li';
+  color: #0C1D46;
+  text-align: left;
+}
+
+.logo-details .logo-with-lines .contentAb.content1 {
+  left: 42%;
+  top: -5px;
+}
+
+.logo-details .logo-with-lines .contentAb.content2 {
+  left: 60%;
+  top: 13%;
+}
+
+.logo-details .logo-with-lines .contentAb.content3 {
+  left: 81%;
+  top: 53%;
+}
+
+.logo-details .logo-with-lines .contentAb.content3 p {
+  max-width: 260px;
+}
+
+.logo-details .logo-with-lines .contentAb.content4 {
+  left: 43%;
+  top: 82%;
+}
+
+.logo-details .logo-with-lines .contentAb.content4 p {
+  max-width: 400px;
+}
+
+.leadership {
+  background-color: #FCFCFE;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.leadership .inner-header h3 {
+  font-size: 36px;
+  font-family: 'IBM-Med';
+  color: #0C1D46;
+  margin-bottom: 20px;
+}
+
+.leadership .ELM-tabs1 {
+  margin-bottom: 50px;
+}
+
+.leadership .ELM-tabs1 .nav-item .nav-link {
+  font-size: 30px;
+  font-family: 'IBM-Li';
+  color: #484E7B;
+  border-bottom: 3px solid transparent;
+  background-color: transparent;
+  border-radius: 0;
+  padding: 15px;
+}
+
+.leadership .ELM-tabs1 .nav-item .nav-link.active {
+  color: #0C1D46;
+  border-bottom-color: #F16845;
+}
+
+.leadership .ELM-tabs1-cont {
+  padding: 20px 60px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .shape {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  left: 0;
+  bottom: 0;
+  background-color: #E4E8F5;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .shape::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #FCFCFE;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  left: -3px;
+  top: -10px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .shape::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #FCFCFE;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  right: -3px;
+  bottom: -10px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .img-box {
+  position: relative;
+  width: 275px;
+  height: 255px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box {
+  position: relative;
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 21px 10px;
+  padding-right: 28px;
+  width: calc(100% - 275px);
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title1 {
+  font-size: 15px;
+  font-family: 'IBM-Li';
+  color: #0C1D46;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .name {
+  font-size: 18px;
+  font-family: 'IBM-Med';
+  color: #0C1D46;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title2 {
+  font-size: 15px;
+  font-family: 'IBM-Li';
+  color: #0C1D46;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .btns-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .btns-box a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 11px;
+  font-family: 'IBM-Li';
+  color: #0C1D46;
+  gap: 10px;
+}
+
+.leadership .ELM-tabs1-cont .leadershipCard .content-box .btns-box a span {
+  font-size: initial;
+  color: inherit;
+}
+
+.leadership .ELM-tabs1-cont .col-lg-6 {
+  padding-right: 12px;
+  padding-left: 50px;
+}
+
+.leadership .ELM-tabs1-cont .col-lg-6:nth-child(2n) {
+  padding-right: 50px;
+  padding-left: 12px;
 }
 
 @media (min-width: 1400px) {
