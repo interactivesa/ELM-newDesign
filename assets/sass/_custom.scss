@@ -3,7 +3,7 @@ body {
   background-color: $white;
   padding-top: 155px;
   overflow-y:auto;
-  font-family: "IBM-Reg";
+  font-family: "font-Reg";
   font-weight: 400;
   // padding-top: 72px;
   overflow-x: hidden;
@@ -180,7 +180,7 @@ img{
           font-size: 22px;
           line-height: 1.3;
           display: inline-block;
-          font-family: 'IBM-Med';
+          font-family: 'font-Med';
           transition: .3s;
           &.lang{
             opacity: 1;
@@ -289,7 +289,7 @@ img{
       align-items: center;
       justify-content: center;
       font-size: 22px;
-      font-family: 'IBM-Med';
+      font-family: 'font-Med';
       color: $text1;
       transition: .3s;
       position: relative;
@@ -372,7 +372,7 @@ img{
           }
           h4.title {
            font-size: 22px;
-           font-family: 'IBM-Med';
+           font-family: 'font-Med';
            color: $text1;
           }
           ul{
@@ -563,7 +563,7 @@ img{
       font-size: 35px;
       line-height: 1.3;
       color: $text1;
-      font-family: 'IBM-XLi';
+      font-family: 'font-XLi';
       margin-bottom: 60px;
       span{
         display: block;
@@ -603,14 +603,14 @@ img{
     .content-box{
       h4{
         font-size: 33px;
-        font-family: 'IBM-Med';
+        font-family: 'font-Med';
         color: $text1;
         margin-bottom: 22px;
         transition: .3s;
       }
       p{
         font-size: 17px;
-        font-family: 'IBM-Li';
+        font-family: 'font-Li';
         color: $text1;
         text-align: justify;
       }
@@ -671,7 +671,7 @@ img{
       font-size: 35px;
       line-height: 1.3;
       color: $text1;
-      font-family: 'IBM-XLi';
+      font-family: 'font-XLi';
       margin-bottom: 60px;
       span{
         display: block;
@@ -695,7 +695,7 @@ img{
     }
     p{
       font-size: 36px;
-      font-family: 'IBM-XLi';
+      font-family: 'font-XLi';
       color: $text1;
       max-width: 670px;
       line-height: 1.2;
@@ -719,7 +719,7 @@ img{
       h4{
         font-size: 20px;
         line-height: 25px;
-        font-family: 'IBM-Med';
+        font-family: 'font-Med';
         color: $text1;
         margin-bottom: 20px;
         height: calc(25px * 2);
@@ -778,7 +778,7 @@ img{
       font-size: 35px;
       line-height: 1.3;
       color: $text1;
-      font-family: 'IBM-XLi';
+      font-family: 'font-XLi';
       margin-bottom: 60px;
       span{
         display: block;
@@ -841,7 +841,7 @@ img{
           li{
             font-size: 18px;
             color: $white;
-            font-family: "IBM-XLi";
+            font-family: "font-XLi";
             margin-bottom: 10px;
           }
         }
@@ -924,7 +924,7 @@ img{
       }
       span {
         font-size: 33px;
-        font-family: 'IBM-Med';
+        font-family: 'font-Med';
        color: $white;
       }
     }
@@ -983,7 +983,7 @@ img{
       font-size: 35px;
       line-height: 1.3;
       color: $text1;
-      font-family: 'IBM-XLi';
+      font-family: 'font-XLi';
       margin-bottom: 60px;
       span{
         display: block;
@@ -1028,7 +1028,7 @@ img{
   .FooterLinks {
     h4{
       font-size: 36px;
-      font-family: 'IBM-Med';
+      font-family: 'font-Med';
       color: $text1;
       margin-bottom: 25px;
     }
@@ -1038,11 +1038,11 @@ img{
       li {
         margin-bottom: 10px;
         font-size: 25px;
-        font-family: 'IBM-Med';
+        font-family: 'font-Med';
         color: #0C1D46;
         a{
           font-size: 25px;
-          font-family: 'IBM-Med';
+          font-family: 'font-Med';
           color: $text1;
         }
       }
@@ -1071,7 +1071,7 @@ img{
       }
       a{
         font-size: 25px;
-        font-family: 'IBM-XLi';
+        font-family: 'font-XLi';
         color: $text1;
       }
     }
@@ -1328,7 +1328,7 @@ img{
     }
     p{
       font-size: 21px;
-      font-family: "IBM-Li";
+      font-family: "font-Li";
       color: $text1;
     }
   }
@@ -1349,7 +1349,7 @@ img{
     margin-bottom: 30px;
     p{
       font-size: 27px;
-      font-family: "IBM-Med";
+      font-family: "font-Med";
       color: $text1;
       margin-bottom: 0;
       text-align: center;
@@ -1474,7 +1474,7 @@ img{
     }
     p{
       font-size: 36px;
-      font-family: "IBM-XLi";
+      font-family: "font-XLi";
       color: $text1;
     }
   }
@@ -1622,13 +1622,13 @@ img{
         max-width: 230px;
         h5{
           font-size: 26px;
-          font-family: 'IBM-Med';
+          font-family: 'font-Med';
           color: $text1;
           margin-bottom: 10px;
         }
         p{
           font-size: 21px;
-          font-family: 'IBM-Li';
+          font-family: 'font-Li';
           color: $text1;;
         }
       }
@@ -1659,7 +1659,7 @@ img{
       position: absolute;
       h5{
         font-size: 28px;
-        font-family: 'IBM-Med';
+        font-family: 'font-Med';
         color: $text1;
         margin-bottom: 10px;
         text-align: #{$start-direction};
@@ -1667,7 +1667,7 @@ img{
       p{
         font-size: 23px;
         line-height: 1.2;
-        font-family: 'IBM-Li';
+        font-family: 'font-Li';
         color: $text1;
         text-align: #{$start-direction};
       }
@@ -1708,7 +1708,7 @@ img{
   .inner-header{
     h3{
       font-size: 36px;
-      font-family: 'IBM-Med';
+      font-family: 'font-Med';
       color: $text1;
       margin-bottom: 20px;
     }
@@ -1718,7 +1718,7 @@ img{
     .nav-item{
       .nav-link{
         font-size: 30px;
-        font-family: 'IBM-Li';
+        font-family: 'font-Li';
         color: $color8;
         border-bottom: 3px solid transparent;
         background-color: transparent;
@@ -1793,17 +1793,17 @@ img{
         .details-area{
           .title1{
             font-size: 15px;
-            font-family: 'IBM-Li';
+            font-family: 'font-Li';
             color: $text1;
           }
           .name{
             font-size: 18px;
-            font-family: 'IBM-Med';
+            font-family: 'font-Med';
             color: $text1;
           }
           .title2{
             font-size: 15px;
-            font-family: 'IBM-Li';
+            font-family: 'font-Li';
             color: $text1;
           }
         }
@@ -1818,7 +1818,7 @@ img{
             justify-content: center;
             align-items: center;
             font-size: 11px;
-            font-family: 'IBM-Li';
+            font-family: 'font-Li';
             color: $text1;
             gap: 10px;
             span{
@@ -1840,6 +1840,260 @@ img{
         padding-#{$start-direction}: 12px;
         
       }
+    }
+  }
+}
+
+
+// elm-trip
+.elm-trip{
+  background-color: $colorOpacity2;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  h3{
+    font-size: 75px;
+    color: $text1;
+    margin-bottom: 20px;
+  }
+  
+  .main-trip-content{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    .years-cont{
+      visibility: visible;
+      opacity: 1;
+      transition: 1s;
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      #{$start-direction}:0;
+      top: 30%;
+      h4{
+        font-size: 55px;
+        font-family: 'font-Med';
+        color: $color4;
+      }
+      p{
+        font-size: 25px;
+        font-family: 'font-Li';
+        color: $color8;
+        span{
+          display: block;
+          font-size: inherit;
+          font-family: 'font-Reg';
+          color: $color4;
+        }
+      }
+      &.hide{
+        // display: none;
+        transform: translateY(50px);
+        transition: .5s;
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+  }
+
+  .cards-cont{
+    display: flex;
+    justify-content: flex-end;
+    .trip-card{
+      width: 250px;
+      margin-#{$end-direction}:-130px ;
+      transition: .3s;
+      .img-box{
+        margin-top: 20px;
+        margin-bottom: 25px;
+        transition: .3s;
+        transform: rotateX(-35deg) rotateY(40deg);
+        position: relative;
+        .square-img{
+          width: 250px;
+          height: 250px;
+          background-color: $color6;
+          position: relative;
+          transition: .3s;
+          opacity: .9;
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-#{$end-direction}: 12px solid $colorOpacity2;
+            transform: rotate(-45deg);
+            #{$start-direction}: -3px;
+            top: -10px;
+          }
+      
+          &::after{
+            content: "";
+            position: absolute;
+            width: 0; 
+            height: 0; 
+            border-top: 12px solid transparent;
+            border-bottom: 12px solid transparent;
+            border-#{$end-direction}: 12px solid $colorOpacity2;
+            transform: rotate(135deg);
+            #{$end-direction}: -3px;
+            bottom: -10px;
+          }
+
+
+        }
+      }
+      .content-box{
+        position: relative;
+        padding-top: 30px;
+        display: flex;
+        justify-content: flex-end;
+        // padding-left: 20px;
+        margin-#{$end-direction}: 5px;
+        &::before{
+          content: "";
+          position: absolute;
+          top: 0;
+          #{$end-direction}:20px;
+          width: 1px;
+          height: 22px;
+          background-color: $text1;
+        }
+        .year{
+          font-size: 20px;
+          color: $text1;
+          transition: .3s;
+        }
+      }
+
+      &.tripCard1{
+        margin-top: 150px;
+        .img-box{
+          z-index: 6;
+
+        }
+      }
+      &.tripCard2{
+        margin-top: 120px;
+        .img-box{
+          z-index: 5;
+          .square-img{
+            background-color: $color4;
+          }
+        }
+      }
+      &.tripCard3{
+        margin-top: 90px;
+        .img-box{
+          z-index: 4;
+        }
+      }
+      &.tripCard4{
+        margin-top: 60px;
+        .img-box{
+          z-index: 3;
+          .square-img{
+            background-color: $color5;
+          }
+        }
+      }
+      &.tripCard5{
+        margin-top: 30px;
+        .img-box{
+          z-index: 2;
+          .square-img{
+            background-color: $color4;
+          }
+        }
+      }
+      &.tripCard6{
+        margin-#{$end-direction}: 0;
+        .img-box{
+          z-index: 1;
+          .square-img{
+            background-color: $color5;
+          }
+        }
+      }
+      
+
+
+      &.active{
+        .img-box{
+          z-index: 10;
+          // transform: scale(1.5);
+          transform: rotateX(-35deg) rotateY(40deg) scale(1.3) translateY(-40px);
+          
+          .square-img{
+            opacity: 1;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+          }
+        }
+        .content-box{
+          .year{
+            color: $color4;
+          }
+        }
+
+        &.tripCard1{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital1.jpg);
+            }
+          }
+        }
+        &.tripCard2{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital2.jpg);
+            }
+          }
+        }
+        &.tripCard3{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital3.jpg);
+            }
+          }
+        }
+        &.tripCard4{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital1.jpg);
+            }
+          }
+        }
+        &.tripCard5{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital4.jpg);
+            }
+          }
+        }
+        &.tripCard6{
+          .img-box{
+            .square-img{
+              background-image: url(../images/home/digital3.jpg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .trip-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    div{
+      cursor: pointer;
     }
   }
 }
