@@ -10,7 +10,7 @@ $(document).ready(function () {
       autoplay: false,
       responsive:{
         0:{
-          items:1,
+          items:2,
           slideBy:1,
         },
         575:{

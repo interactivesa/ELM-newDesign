@@ -14,3 +14,18 @@ $(document).ready(function () {
   }
    
 });
+
+
+// $(".leadershipCard .btns-box .cv-open").on("click", function () {
+//   console.log("opened");
+//   $(this).closest(".leadershipCard").children(".hidden-popup").addClass("show");
+//   $(this).closest(".col-lg-6").addClass("full-width");
+  
+// })
+
+// $(".leadershipCard .hidden-popup .close").on("click", function () {
+//   console.log("close");
+//   $(this).parent(".hidden-popup").removeClass("show");
+//   $(this).closest(".col-lg-6").removeClass("full-width");
+  
+// })

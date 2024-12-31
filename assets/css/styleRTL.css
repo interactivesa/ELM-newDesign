@@ -55,6 +55,10 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+}
+
 .fexCenter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,7 +352,6 @@ img {
   .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu {
     border: unset;
     padding: 15px 25px;
-    border-radius: 8px;
     min-width: 350px;
     width: auto;
     top: 100%;
@@ -586,10 +589,11 @@ img {
 }
 
 .ourImpact .ourImpact-card .content-box p {
-  font-size: 17px;
+  font-size: 19px;
   font-family: 'font-Li';
   color: #0C1D46;
   text-align: justify;
+  margin-bottom: 0;
 }
 
 .ourImpact .ourImpact-card:hover .img-box {
@@ -706,7 +710,7 @@ img {
 }
 
 .persevering .persevering-card .content-box h4 {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 25px;
   font-family: 'font-Med';
   color: #0C1D46;
@@ -847,7 +851,8 @@ img {
   padding: 0 25px 20px;
 }
 
-.digital .digital-card .content-box .hidden-area ul li {
+.digital .digital-card .content-box .hidden-area ul li,
+.digital .digital-card .content-box .hidden-area ul a {
   font-size: 18px;
   color: #FFF;
   font-family: "font-XLi";
@@ -952,7 +957,8 @@ img {
 }
 
 .ourNum .wapperNM .boxNum span {
-  font-size: 33px;
+  font-size: 35px;
+  line-height: 1;
   font-family: 'font-Med';
   color: #FFF;
 }
@@ -1044,6 +1050,40 @@ img {
   font-size: 26px;
   color: #FFF;
   margin-bottom: 0;
+}
+
+.home-news .owl-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+}
+
+.home-news .owl-dots .owl-dot {
+  display: block;
+  width: 13px;
+  height: 13px;
+  background-color: #BFC9E6;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.home-news .owl-dots .owl-dot span {
+  display: none;
+}
+
+.home-news .owl-dots .owl-dot.active {
+  background-color: #0C1D46;
 }
 
 .footer .top-footer {
@@ -1312,7 +1352,10 @@ img {
 }
 
 .breadcrumb {
-  height: 70px;
+  min-height: 70px;
+  height: auto;
+  padding-bottom: 15px;
+  background-color: #F7F8FC;
   margin-bottom: 0;
 }
 
@@ -1324,8 +1367,10 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 22px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   padding: 0;
+  list-style: none;
 }
 
 .breadcrumb .items li .home img {
@@ -1333,20 +1378,30 @@ img {
 }
 
 .breadcrumb .items li a {
-  position: relative;
+  font-size: 20px;
+  color: #464D7E;
+  text-decoration: none;
   padding-left: 24px;
+  position: relative;
 }
 
 .breadcrumb .items li a::after {
   content: "";
   position: absolute;
-  left: 5px;
+  left: 8px;
   top: 5px;
-  height: 16px;
-  width: 16px;
+  height: 11px;
+  width: 10px;
   background-image: url(../images/shared/old-chevron-left-3.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.breadcrumb .items li span {
+  font-size: 20px;
+  color: #464D7E;
+  text-decoration: none;
+  padding-left: 0;
 }
 
 .mediaRel-main {
@@ -1825,6 +1880,7 @@ img {
 
 .leadership .ELM-tabs1 {
   margin-bottom: 50px;
+  padding: 0;
 }
 
 .leadership .ELM-tabs1 .nav-item .nav-link {
@@ -1844,6 +1900,104 @@ img {
 
 .leadership .ELM-tabs1-cont {
   padding: 20px 60px;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup {
+  padding: 15px 45px;
+  padding-bottom: 100px;
+  background-color: #E4E8F5;
+  width: 100%;
+  height: auto;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .close {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 20px;
+  top: 0px;
+  cursor: pointer;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .img-box {
+  position: relative;
+  width: 170px;
+  height: 130px;
+  border-bottom: 3px solid #F16845;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title1 {
+  font-size: 20px;
+  font-family: 'font-Li';
+  color: #0C1D46;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .content .name {
+  font-size: 25px;
+  font-family: 'font-Med';
+  color: #0C1D46;
+  display: inline-block;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title2 {
+  font-size: 20px;
+  line-height: 1;
+  font-family: 'font-Li';
+  color: #0C1D46;
+  display: inline-block;
+  position: relative;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title2::before {
+  content: '|';
+  padding: 0 5px;
+  font-size: inherit;
+  color: #F16845;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .details h4 {
+  font-size: 23px;
+  color: #0C1D46;
+  margin-bottom: 20px;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup .details ul li {
+  font-size: 20px;
+  line-height: 1.2;
+  font-family: 'font-Li';
+  color: #0C1D46;
+  margin-bottom: 5px;
+}
+
+.leadership .ELM-tabs1-cont .hidden-popup.show {
+  opacity: .9;
+  visibility: visible;
+  z-index: 10;
 }
 
 .leadership .ELM-tabs1-cont .leadershipCard {
@@ -1927,19 +2081,21 @@ img {
 }
 
 .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title1 {
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1;
   font-family: 'font-Li';
   color: #0C1D46;
 }
 
 .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .name {
-  font-size: 18px;
+  font-size: 23px;
   font-family: 'font-Med';
   color: #0C1D46;
 }
 
 .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title2 {
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 1;
   font-family: 'font-Li';
   color: #0C1D46;
 }
@@ -1990,6 +2146,13 @@ img {
 .leadership .ELM-tabs1-cont .col-lg-6:nth-child(2n) {
   padding-left: 50px;
   padding-right: 12px;
+}
+
+.leadership .ELM-tabs1-cont .col-lg-6.full-width {
+  position: relative;
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 
 .elm-trip {
@@ -2277,6 +2440,119 @@ img {
   cursor: pointer;
 }
 
+.cvPop-width {
+  max-width: 1300px;
+  margin-top: 12%;
+}
+
+.cvPop-width .modal-content {
+  border: 0;
+  border-radius: 0;
+  -webkit-box-shadow: 0 10px 40px #00000030;
+          box-shadow: 0 10px 40px #00000030;
+}
+
+.cvPop-width .modal-content::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  right: 0px;
+  top: -23px;
+  background-image: url(../images/shared/menu-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.cvPop-width .modal-content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 23px;
+  left: 0px;
+  bottom: -23px;
+  background-image: url(../images/shared/menu-bg.svg);
+  background-repeat: no-repeat;
+}
+
+.modal-backdrop.show {
+  display: none;
+}
+
+html[lang="en"] .elm-trip .trip-nav div img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+html[lang="en"] .elm-trip .cards-cont .trip-card .img-box {
+  -webkit-transform: rotateX(-35deg) rotateY(-40deg);
+          transform: rotateX(-35deg) rotateY(-40deg);
+}
+
+html[lang="en"] .elm-trip .cards-cont .trip-card.active .img-box {
+  -webkit-transform: rotateX(-35deg) rotateY(-40deg) scale(1.3) translateY(-40px);
+          transform: rotateX(-35deg) rotateY(-40deg) scale(1.3) translateY(-40px);
+}
+
+html[lang="en"] .elm-trip .cards-cont .trip-card .img-box .square-img::before,
+html[lang="en"] .btn-withShape a::before,
+html[lang="en"] .ourImpact .ourImpact-card.card-withShape::before,
+html[lang="en"] .mediaRel-main .btn-shaped::before,
+html[lang="en"] .download-logo .download-btn .btn-shaped::before,
+html[lang="en"] .leadership .ELM-tabs1-cont .leadershipCard .shape::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+html[lang="en"] .elm-trip .cards-cont .trip-card .img-box .square-img::after,
+html[lang="en"] .btn-withShape a::after,
+html[lang="en"] .ourImpact .ourImpact-card.card-withShape::after,
+html[lang="en"] .card-withShape::after,
+html[lang="en"] .mediaRel-main .btn-shaped::after,
+html[lang="en"] .download-logo .download-btn .btn-shaped::after,
+html[lang="en"] .leadership .ELM-tabs1-cont .leadershipCard .shape::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
+html[lang="en"] .ourNum .wapperNM .boxNum .counter {
+  direction: rtl;
+}
+
+html[lang="en"] .card-withShape-Rev::before {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+html[lang="en"] .card-withShape-Rev::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+html[lang="en"] .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu::before,
+html[lang="en"] .cvPop-width .modal-content::before {
+  -webkit-transform: rotateX(-180deg);
+          transform: rotateX(-180deg);
+}
+
+html[lang="en"] .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu::after,
+html[lang="en"] .cvPop-width .modal-content::after {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+html[lang="en"] .mediaRel-main .btn-shaped .img-cont::before,
+html[lang="en"] .download-logo .download-btn .btn-shaped .img-cont::before {
+  right: 0;
+}
+
+html[lang="en"] .logo-colors::before,
+html[lang="en"] .logo-colors .content-box .logoColorCard .img-box {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1360px;
@@ -2295,4 +2571,989 @@ img {
 /***************
                     meeeeedia max-width
 ****************/
+@media (max-width: 1700px) {
+  .leadership .ELM-tabs1-cont .col-lg-6 {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .img-box {
+    width: 200px;
+    height: 225px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box {
+    width: calc(100% - 200px);
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .mediaRel-main .main-box h3 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+  .logo-details .main-box h3 {
+    font-size: 60px;
+  }
+  .mediaRel-main .btn-shaped {
+    font-size: 22px;
+    height: 85px;
+  }
+  .mediaRel-main .secnd-sec p {
+    font-size: 24px;
+  }
+  .logo-details .logo-with-lines img {
+    zoom: .8;
+  }
+  .logo-details .logo-with-lines .contentAb h5 {
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .logo-details .logo-with-lines .contentAb p {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .logo-details .logo-with-lines .contentAb.content4 p {
+    max-width: 315px;
+  }
+  .download-logo .main-box {
+    margin-bottom: 50px;
+  }
+  .download-logo .main-box h3 {
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 25px;
+  }
+  .download-logo .main-box p {
+    font-size: 28px;
+    line-height: 1;
+  }
+  .download-logo .downloadLogo img {
+    max-height: 125px;
+  }
+  .download-logo .download-btn .btn-shaped {
+    font-size: 23px;
+    height: 85px;
+    margin-top: 100px;
+    width: 300px;
+  }
+  .logo-colors {
+    padding: 105px 0;
+  }
+  .logo-colors .main-box {
+    margin-bottom: 170px;
+  }
+  .logo-colors .main-box h3 {
+    font-size: 60px;
+    line-height: 1;
+  }
+  .logo-colors .content-box .logoColorCard .cont-box h5 {
+    line-height: 1;
+  }
+  .logo-colors .content-box .logoColorCard .cont-box p {
+    line-height: 1;
+  }
+  .home-tatawor .main-box {
+    padding-right: 130px;
+  }
+  .home-Investors .main-box {
+    padding-left: 130px;
+  }
+  .home-tatawor .main-box h3,
+  .ourImpact .main-box h3,
+  .home-ebtkar .main-box h3,
+  .digital .main-box h3,
+  .ourNum .main-box h3,
+  .persevering .main-box h3,
+  .home-Investors .main-box h3,
+  .home-news .main-box h3,
+  .elm-trip h3 {
+    font-size: 60px;
+    line-height: 1;
+  }
+  .home-tatawor .main-box p,
+  .home-ebtkar .main-box p,
+  .persevering .main-box p,
+  .home-Investors .main-box p,
+  .home-news .main-box p {
+    font-size: 28px;
+    line-height: 1;
+  }
+  .btn-withShape a {
+    height: 45px;
+    font-size: 23px;
+  }
+  .ourNum .wapperNM .boxNum .counter {
+    font-size: 110px;
+    line-height: 1;
+    margin-bottom: 0;
+  }
+  .ourNum .wapperNM {
+    height: 250px;
+  }
+  .digital .digital-card .content-box h4 {
+    font-size: 25px;
+    padding-bottom: 25px;
+    padding-left: 50px;
+  }
+  .digital .digital-card .content-box .plus-img {
+    top: 20px;
+    left: 30px;
+  }
+  .digital {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .digital .main-box {
+    margin-bottom: 60px;
+  }
+  .ourNum,
+  .persevering,
+  .home-Investors,
+  .home-news {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .home-ebtkar {
+    padding-top: 100px;
+  }
+  .ourImpact {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+  .ourImpact .main-box h3 {
+    margin-bottom: 100px;
+  }
+  .ourImpact .ourImpact-card {
+    padding: 55px 25px;
+  }
+  .ourImpact .ourImpact-card .img-box {
+    left: 15px;
+    top: -35px;
+    max-width: 90px;
+  }
+  .ourImpact .ourImpact-card .content-box h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .cvPop-width {
+    max-width: 1000px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .leadership .ELM-tabs1-cont {
+    padding: 20px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .img-box {
+    width: 180px;
+    height: 210px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box {
+    width: calc(100% - 180px);
+    margin-top: 65px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title1,
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title2,
+  .leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title1,
+  .leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title2,
+  .leadership .ELM-tabs1-cont .hidden-popup .details ul li {
+    font-size: 15px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .name,
+  .leadership .ELM-tabs1-cont .hidden-popup .main-top .content .name,
+  .leadership .ELM-tabs1-cont .hidden-popup .details h4 {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .leadership .ELM-tabs1-cont .hidden-popup .main-top {
+    margin-bottom: 30px;
+  }
+  .leadership .ELM-tabs1-cont .hidden-popup {
+    padding: 25px 45px;
+    padding-bottom: 35px;
+    min-height: 485px;
+  }
+  .mediaRel-main .main-box h3,
+  .logo-details .main-box h3,
+  .download-logo .main-box h3,
+  .logo-colors .main-box h3 {
+    font-size: 50px;
+  }
+  .ourImpact .col-lg-4 {
+    padding: 0 15px;
+  }
+  .ourImpact .ourImpact-card .content-box p {
+    font-size: 16px;
+  }
+  .home-tatawor .main-box h3,
+  .ourImpact .main-box h3,
+  .home-ebtkar .main-box h3,
+  .digital .main-box h3,
+  .ourNum .main-box h3,
+  .persevering .main-box h3,
+  .home-Investors .main-box h3,
+  .home-news .main-box h3,
+  .elm-trip h3 {
+    font-size: 50px;
+  }
+  .home-tatawor .main-box p,
+  .home-ebtkar .main-box p,
+  .persevering .main-box p,
+  .home-Investors .main-box p,
+  .home-news .main-box p {
+    font-size: 22px;
+  }
+  .btn-withShape a {
+    height: 40px;
+    font-size: 20px;
+  }
+  .home-tatawor {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .home-tatawor .main-box {
+    padding-right: 90px;
+  }
+  .home-tatawor .main-box h3 {
+    margin-bottom: 15px;
+  }
+  .home-tatawor .main-box p {
+    margin-bottom: 30px;
+  }
+  .ourImpact {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  .ourImpact .main-box h3 {
+    margin-bottom: 70px;
+  }
+  .ourImpact .ourImpact-card {
+    padding: 35px 25px;
+    min-height: 315px;
+  }
+  .ourImpact .ourImpact-card .content-box h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  .ourImpact .ourImpact-card:hover .img-box {
+    top: -60px;
+  }
+  .home-ebtkar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .home-ebtkar .main-box {
+    padding-right: 50px;
+  }
+  .home-ebtkar .main-box h3 {
+    margin-bottom: 15px;
+  }
+  .home-ebtkar .main-box p {
+    margin-bottom: 30px;
+  }
+  .digital {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .digital .col-lg-3 {
+    padding: 0 12px;
+  }
+  .digital .digital-card .content-box h4 {
+    font-size: 22px;
+    padding-left: 40px;
+  }
+  .digital .digital-card .content-box .plus-img {
+    left: 25px;
+    width: 14px;
+  }
+  .ourNum {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .ourNum .main-box {
+    margin-bottom: 40px;
+  }
+  .ourNum .wapperNM {
+    height: 220px;
+  }
+  .ourNum .wapperNM .boxNum {
+    gap: 10px;
+  }
+  .ourNum .wapperNM .boxNum .counter {
+    font-size: 80px;
+  }
+  .persevering {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .persevering .persevering-card {
+    min-height: 250px;
+  }
+  .persevering .persevering-card .content-box h4 {
+    font-size: 22px;
+    line-height: 22px;
+    height: calc(22px* 2);
+  }
+  .persevering .persevering-card .img-box img {
+    max-width: 60%;
+    max-height: 130px;
+  }
+  .home-Investors {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-Investors .main-box {
+    padding-left: 70px;
+  }
+  .home-Investors .main-box h3 {
+    margin-bottom: 15px;
+  }
+  .home-Investors .main-box p {
+    margin-bottom: 30px;
+  }
+  .home-news {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .home-news .main-box {
+    padding-left: 30px;
+  }
+  .home-news .main-box h3 {
+    margin-bottom: 15px;
+  }
+  .home-news .main-box p {
+    margin-bottom: 30px;
+  }
+  .home-news .owl-carousel-news {
+    margin-top: 30px;
+  }
+  .home-news .owl-carousel-news .news-card h4.date {
+    font-size: 22px;
+  }
+  .home-news .owl-dots {
+    margin-top: 20px;
+  }
+  .footer .top-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .footer .top-footer .logo-box img {
+    max-width: 170px;
+  }
+  .footer .btm-footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .footer .btm-footer .footer-last .dir-links {
+    gap: 3%;
+    padding: 0;
+  }
+  .footer .btm-footer .footer-last .dir-links li a {
+    font-size: 20px;
+  }
+  .footer .FooterLinks h4 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .footer .FooterLinks ul li {
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 1;
+  }
+  .footer .FooterLinks ul li a {
+    font-size: inherit;
+    line-height: inherit;
+  }
+  .footer .FooterLinks.with-icon .icon-box {
+    height: 30px;
+    width: 35px;
+    margin-bottom: 15px;
+  }
+  .footer .FooterLinks.with-icon .icon-box img {
+    max-height: 100%;
+  }
+  .footer .FooterLinks.with-icon h4 {
+    margin-bottom: 10px;
+  }
+  .footer .FooterLinks.with-icon a {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .footer .FooterLinks.social {
+    margin-top: 50px;
+  }
+  .footer .FooterLinks.social ul {
+    gap: 10px;
+  }
+  .footer .spacing100 {
+    margin-top: 50px;
+  }
+  .cvPop-width {
+    max-width: 900px;
+  }
+  .elm-trip .cards-cont .trip-card {
+    width: 215px;
+  }
+  .elm-trip .cards-cont .trip-card .img-box .square-img {
+    width: 215px;
+    height: 215px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 111px;
+  }
+  .menuWithBanner .topnav ul {
+    margin-bottom: 0;
+  }
+  .menuWithBanner .topnav ul li {
+    padding: 5px 0;
+  }
+  .menuWithBanner .topnav ul li a {
+    font-size: 17px;
+  }
+  .menuWithBanner .topnav ul.end {
+    gap: 4%;
+  }
+  .menuWithBanner .topnav .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menuWithBanner .topnav .row .col-lg-6:first-child {
+    width: 20%;
+  }
+  .menuWithBanner .topnav .row .col-lg-6:nth-child(2) {
+    width: 80%;
+  }
+  .menuWithBanner {
+    -webkit-box-shadow: 0 10px 40px #00000012;
+            box-shadow: 0 10px 40px #00000012;
+  }
+  .menuWithBanner .navi {
+    padding: 10px 0;
+  }
+  .menuWithBanner .navbar-toggler {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-decoration: none;
+    margin-top: 7px;
+  }
+  .menuWithBanner .navbarMenu .navbar-nav {
+    position: absolute;
+    background-color: #ffffff;
+    right: 0;
+    top: 100px;
+    padding: 20px 80px 40px;
+    -webkit-box-shadow: 0 10px 40px #00000012;
+            box-shadow: 0 10px 40px #00000012;
+  }
+  .menuWithBanner .navbarMenu .navbar-nav .nav-link {
+    height: auto;
+    padding: 5px 0;
+  }
+  .menuWithBanner .navbarMenu .navbar-nav .dropdown-menu {
+    border: none;
+    text-align: right;
+    background-color: #E5E9F5;
+    padding: 10px 25px;
+  }
+  .menuWithBanner .navbarMenu .navbar-nav .dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footer .top-footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer .FooterLinks h4 {
+    font-size: 25px;
+    font-family: 'font-Med';
+    color: #0C1D46;
+    margin-bottom: 20px;
+  }
+  .footer .FooterLinks ul li {
+    margin-bottom: 7px;
+    line-height: 1;
+    font-size: 20px;
+  }
+  .footer .FooterLinks ul li a {
+    font-size: inherit;
+  }
+  .footer .top-footer .logo-box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer .top-footer .logo-box img {
+    max-width: 150px;
+  }
+  .footer .spacing100 {
+    margin-top: 40px;
+  }
+  .footer .FooterLinks.with-icon .icon-box {
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  .footer .FooterLinks.with-icon .icon-box img {
+    max-height: 100%;
+  }
+  .footer .FooterLinks h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .footer .FooterLinks.with-icon a {
+    font-size: 20px;
+    line-height: 1;
+  }
+  .FooterLinks.with-icon {
+    margin-bottom: 10px;
+  }
+  .footer .FooterLinks.social {
+    margin-top: 35px;
+  }
+  .footer .FooterLinks.social h4 {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .footer .FooterLinks.social ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 15px;
+  }
+  .footer .FooterLinks.social ul li a {
+    width: 38px;
+    height: 38px;
+  }
+  .footer .btm-footer .footer-last .dir-links {
+    gap: 2%;
+  }
+  .footer .btm-footer .footer-last .dir-links li a {
+    font-size: 18px;
+    line-height: 1;
+  }
+  .mediaRel-main {
+    padding-top: 50px;
+  }
+  .mediaRel-main .main-box {
+    position: relative;
+    z-index: 2;
+  }
+  .mediaRel-main .img-box {
+    position: relative;
+    z-index: 0;
+    margin-top: -130px;
+    max-height: 500px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .mediaRel-main .btn-shaped {
+    margin-bottom: 20px;
+  }
+  .logo-details {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+  .logo-details .logo-with-lines {
+    zoom: .7;
+  }
+  .logo-details .logo-with-lines img {
+    zoom: .7;
+  }
+  .logo-details .logo-with-lines .contentAb.content4 p {
+    width: 285px;
+  }
+  .download-logo {
+    padding-bottom: 60px;
+    padding-top: 65px;
+  }
+  .download-logo .downloadLogo {
+    margin-bottom: 40px;
+  }
+  .logo-colors {
+    padding: 60px 0;
+  }
+  .logo-colors .main-box {
+    margin-bottom: 100px;
+  }
+  .logo-colors .content-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .logo-colors .content-box .logoColorCard .img-box {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+  .logo-colors .content-box .logoColorCard .cont-box h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .logo-colors .content-box .logoColorCard .cont-box p {
+    font-size: 16px;
+  }
+  .home-tatawor .main-box {
+    padding: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+  }
+  .home-tatawor .img-box {
+    text-align: center;
+  }
+  .home-tatawor .img-box img {
+    max-width: 450px;
+  }
+  .home-ebtkar .main-box {
+    padding: 0;
+    margin-top: 20px;
+  }
+  .ourImpact .main-box h3 {
+    margin-bottom: 50px;
+  }
+  .ourImpact .ourImpact-card {
+    min-height: auto;
+    margin-bottom: 40px;
+  }
+  .home-ebtkar .img-box {
+    text-align: center;
+  }
+  .home-ebtkar .img-box img {
+    max-width: 450px;
+  }
+  .card-withShape {
+    margin-bottom: 30px;
+  }
+  .ourNum .wapperNM.color2 {
+    background-size: cover;
+  }
+  .persevering .persevering-card {
+    min-height: auto;
+    margin-bottom: 30px;
+  }
+  .home-Investors .img-box {
+    text-align: center;
+  }
+  .home-Investors .img-box img {
+    max-width: 450px;
+  }
+  .home-news .main-box {
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .footer .FooterLinks h4 {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .footer .FooterLinks ul.dashed > li {
+    text-align: center;
+  }
+  .footer .FooterLinks.with-icon .icon-box {
+    margin: 0 auto;
+  }
+  .footer .FooterLinks.with-icon a {
+    display: block;
+    text-align: center;
+  }
+  .footer .top-footer {
+    padding-top: 40px;
+    padding-bottom: 25px;
+  }
+  .footer .top-footer .logo-box {
+    margin-bottom: 20px;
+  }
+  .footer .top-footer .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer .top-footer .row.spacing100 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .btm-footer {
+    padding-top: 35px;
+    padding-bottom: 5px;
+  }
+  .footer .btm-footer .logos-box {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer .btm-footer .footer-last .dir-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+  }
+  .home-Investors .main-box {
+    padding: 0;
+    margin-bottom: 30px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+  }
+  .home-news .owl-carousel-news .news-card h4.date {
+    font-size: 16px;
+    bottom: 0px;
+    padding: 5px 10px;
+  }
+  .cvPop-width {
+    max-width: 500px;
+  }
+  .elm-trip {
+    padding-top: 50px;
+    padding-bottom: 60px;
+  }
+  .elm-trip .col-lg-12 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .elm-trip .col-lg-4 {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .elm-trip .col-lg-8 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .elm-trip .col-12 {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .elm-trip .main-trip-content {
+    min-height: 110px;
+    text-align: center;
+    margin-top: 15px;
+  }
+  .elm-trip .main-trip-content .years-cont {
+    top: 0;
+  }
+  .elm-trip .main-trip-content .years-cont h4 {
+    font-size: 40px;
+    line-height: 1;
+  }
+  .elm-trip .main-trip-content .years-cont p {
+    line-height: 1;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 103px;
+  }
+  .leadership .inner-header h3 {
+    font-size: 30px;
+  }
+  .leadership .ELM-tabs1 .nav-item .nav-link {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .mediaRel-main .main-box h3,
+  .logo-details .main-box h3,
+  .download-logo .main-box h3,
+  .logo-colors .main-box h3 {
+    font-size: 35px;
+  }
+  .mediaRel-main .main-box p {
+    font-size: 18px;
+  }
+  .mediaRel-main .secnd-sec p {
+    font-size: 18px;
+  }
+  .mediaRel-main .btn-shaped {
+    font-size: 18px;
+    height: 75px;
+  }
+  .mediaRel-main .btn-shaped .img-cont img {
+    zoom: .9;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  .mediaRel-main .btn-shaped:hover .img-cont img {
+    -webkit-transform: translateY(13px);
+            transform: translateY(13px);
+  }
+  .logo-details .logo-with-lines {
+    zoom: .6;
+  }
+  .logo-details .logo-with-lines img {
+    zoom: .6;
+  }
+  .logo-details .logo-with-lines .contentAb.content4 p {
+    width: 240px;
+  }
+  .download-logo .main-box p {
+    font-size: 20px;
+  }
+  .download-logo .download-btn .btn-shaped {
+    font-size: 18px;
+    height: 75px;
+    margin-top: 65px;
+    width: 230px;
+  }
+  .download-logo .download-btn .btn-shaped .img-cont img {
+    zoom: .9;
+    -webkit-transform: translateY(3px);
+            transform: translateY(3px);
+  }
+  .download-logo .download-btn .btn-shaped:hover .img-cont img {
+    -webkit-transform: translateY(12px);
+            transform: translateY(12px);
+  }
+  .logo-colors {
+    padding-bottom: 155px;
+  }
+  .logo-colors::before {
+    background-size: contain;
+    background-position: bottom right;
+  }
+  .logo-colors .main-box {
+    margin-bottom: 40px;
+  }
+  .logo-colors .content-box {
+    gap: 10px;
+  }
+  .home-tatawor .main-box h3,
+  .ourImpact .main-box h3,
+  .home-ebtkar .main-box h3,
+  .digital .main-box h3,
+  .ourNum .main-box h3,
+  .persevering .main-box h3,
+  .home-Investors .main-box h3,
+  .home-news .main-box h3,
+  .elm-trip h3 {
+    font-size: 35px;
+  }
+  .home-tatawor .main-box p, .home-ebtkar .main-box p, .persevering .main-box p, .home-Investors .main-box p, .home-news .main-box p {
+    font-size: 20px;
+  }
+  .ourNum .numContainer {
+    margin: 0;
+  }
+  .ourNum .wapperNM .boxNum .counter {
+    font-size: 60px;
+  }
+  .ourNum .wapperNM .boxNum span {
+    font-size: 20px;
+  }
+  .elm-trip .cards-cont .trip-card {
+    width: 50%;
+  }
+  .elm-trip .cards-cont .trip-card .img-box .square-img {
+    width: 100%;
+    height: 175px;
+  }
+}
+
+@media (max-width: 574.98px) {
+  body {
+    padding-top: 100px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .img-box {
+    width: 200px;
+    height: 185px;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box {
+    width: calc(100%);
+    margin-top: 10px;
+  }
+  .leadership .ELM-tabs1-cont .hidden-popup {
+    padding: 20px 25px;
+  }
+  .leadership .ELM-tabs1-cont .hidden-popup .main-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .leadership .ELM-tabs1-cont .leadershipCard .content-box .btns-box {
+    margin-top: 10px;
+  }
+  .logo-details .logo-with-lines {
+    zoom: .5;
+  }
+  .logo-details .logo-with-lines img {
+    zoom: .5;
+  }
+  .mediaRel-main .main-box h3, .logo-details .main-box h3, .download-logo .main-box h3, .logo-colors .main-box h3 {
+    font-size: 30px;
+  }
+  .mediaRel-main {
+    padding-bottom: 40px;
+  }
+  .mediaRel-main .main-box p {
+    font-size: 15px;
+  }
+  .mediaRel-main .main-box h3 {
+    margin-bottom: 20px;
+  }
+  .download-logo .main-box {
+    margin-bottom: 25px;
+  }
+  .download-logo .main-box p {
+    font-size: 16px;
+  }
+  .download-logo .downloadLogo img {
+    max-height: inherit;
+    max-width: 150px;
+  }
+  .home-tatawor .img-box img,
+  .home-ebtkar .img-box img,
+  .home-Investors .img-box img {
+    max-width: 100%;
+  }
+  .ourNum .wapperNM .boxNum .counter {
+    font-size: 40px;
+  }
+  .ourNum .wapperNM {
+    height: 160px;
+    padding: 0 15px;
+  }
+  .ourNum .wapperNM .boxNum span {
+    font-size: 18px;
+  }
+  .menuWithBanner .navbarMenu .navbar-nav {
+    padding: 20px 30px 40px;
+  }
+}
 /*# sourceMappingURL=styleRTL.css.map */
