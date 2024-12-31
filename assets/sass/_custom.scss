@@ -3,7 +3,7 @@ body {
   background-color: $white;
   padding-top: 155px;
   overflow-y:auto;
-  font-family: "font-Reg";
+  font-family: "font-Reg" !important;
   font-weight: 400;
   // padding-top: 72px;
   overflow-x: hidden;
@@ -44,6 +44,7 @@ img{
     position: relative;
     padding: 5px 20px;
     height: 50px;
+    text-decoration: none;
     transition: .3s;
     &::before{
       content: "";
@@ -561,6 +562,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
     p{
@@ -586,6 +590,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 171px;
     }
   }
@@ -670,6 +677,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
     p{
@@ -696,6 +706,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
     p{
@@ -777,6 +790,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
     p{
@@ -803,6 +819,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
     }
   }
   .col-lg-3{
@@ -887,6 +906,7 @@ img{
         }
         .hidden-area{
           display: block;
+          min-height: 300px;
         }
       }
     }
@@ -902,6 +922,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
   }
@@ -984,6 +1007,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
     p{
@@ -1349,6 +1375,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 40px;
       span{
         display: block;
@@ -1498,6 +1527,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 40px;
     }
     p{
@@ -1631,6 +1663,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
       margin-bottom: 20px;
     }
   }
@@ -1674,6 +1709,9 @@ img{
     h3{
       font-size: 75px;
       color: $text1;
+      font-family: "font-Reg";
+      line-height: 1;
+      margin: 0;
     }
   }
   .logo-with-lines{

@@ -50,7 +50,7 @@ body {
   background-color: #FFF;
   padding-top: 155px;
   overflow-y: auto;
-  font-family: "font-Reg";
+  font-family: "font-Reg" !important;
   font-weight: 400;
   overflow-x: hidden;
 }
@@ -100,6 +100,7 @@ img {
   position: relative;
   padding: 5px 20px;
   height: 50px;
+  text-decoration: none;
   -webkit-transition: .3s;
   transition: .3s;
 }
@@ -533,6 +534,9 @@ img {
 .home-tatawor .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -557,6 +561,9 @@ img {
 .ourImpact .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 171px;
 }
 
@@ -647,6 +654,9 @@ img {
 .home-ebtkar .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -675,6 +685,9 @@ img {
 .persevering .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -771,6 +784,9 @@ img {
 .home-Investors .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -799,6 +815,9 @@ img {
 .digital .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
 }
 
 .digital .col-lg-3 {
@@ -889,6 +908,7 @@ img {
 
 .digital .digital-card:hover .content-box .hidden-area {
   display: block;
+  min-height: 300px;
 }
 
 .ourNum {
@@ -904,6 +924,9 @@ img {
 .ourNum .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -1018,6 +1041,9 @@ img {
 .home-news .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -1427,6 +1453,9 @@ img {
 .mediaRel-main .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -1601,6 +1630,9 @@ img {
 .download-logo .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -1756,6 +1788,9 @@ img {
 .logo-colors .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
   margin-bottom: 20px;
 }
 
@@ -1809,6 +1844,9 @@ img {
 .logo-details .main-box h3 {
   font-size: 75px;
   color: #0C1D46;
+  font-family: "font-Reg";
+  line-height: 1;
+  margin: 0;
 }
 
 .logo-details .logo-with-lines {
@@ -2555,16 +2593,16 @@ html[lang="en"] .logo-colors .content-box .logoColorCard .img-box {
 
 @media (min-width: 1400px) {
   .container {
-    max-width: 1360px;
+    max-width: 1360px !important;
   }
 }
 
 @media (min-width: 1500px) {
   .container {
-    max-width: 1440px;
+    max-width: 1440px !important;
   }
   .container2 {
-    max-width: 1260px;
+    max-width: 1260px !important;
   }
 }
 

@@ -1,17 +1,17 @@
 
 @media(min-width:1400px) {
     .container {
-        max-width: 1360px;
+        max-width: 1360px !important;
     }
    
 }
 
 @media(min-width:1500px) {
     .container {
-        max-width: 1440px;
+        max-width: 1440px !important;
     }
     .container2{
-        max-width: 1260px;
+        max-width: 1260px !important;
     }
    
 }
