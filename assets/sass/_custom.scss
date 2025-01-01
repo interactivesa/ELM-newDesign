@@ -7,7 +7,42 @@ body {
   font-weight: 400;
   // padding-top: 72px;
   overflow-x: hidden;
+  text-align: #{$start-direction};
 }
+body *{
+  text-align: #{$start-direction};
+}
+
+
+
+
+h1 , h2 , h3 , h4 , h5 , h6 {
+  margin: 0;
+}
+// share point 
+#s4-bodyContainer{
+  padding: 0;
+}
+.ms-webpart-zone{
+  display: block;
+}
+div.ms-webpart-cell-vertical-inline-table{
+  display: block;
+}
+.ms-webpart-chrome-vertical{
+  display: block;
+}
+.ms-webpartzone-cell{
+  margin: 0;
+}
+
+
+
+
+
+
+// end share point
+
 a{
   text-decoration: none;
 }
@@ -1159,7 +1194,9 @@ img{
       flex-direction: column;
       margin-top: 75px;
       h4{
+        margin: 0;
         margin-#{$start-direction}: auto;
+        margin-bottom: 25px;
       }
       
       ul{
@@ -1339,7 +1376,7 @@ img{
   min-height: 70px;
   height: auto;
   padding-bottom: 15px;
-  background-color: $color3;
+  background-color: $color3 !important;
   margin-bottom: 0;
 
   .items {
@@ -1350,6 +1387,13 @@ img{
     margin-bottom: 10px;
     padding: 0;
     list-style: none;;
+    > span{
+      align-items: center;
+      display: flex;
+      > span:first-of-type {
+        display: none
+      }
+    }
     li {
       .home {
         img {
@@ -2047,6 +2091,7 @@ img{
   background-color: $colorOpacity2;
   padding-top: 150px;
   padding-bottom: 100px;
+  direction: rtl;
   h3{
     font-size: 75px;
     color: $text1;
@@ -2389,7 +2434,8 @@ html[lang="en-US"]{
     transform: scaleX(-1);
   }
   .menuWithBanner ,
-  footer
+  footer,
+  .elm-trip
   {
     direction: ltr;
   }
