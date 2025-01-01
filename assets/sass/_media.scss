@@ -220,6 +220,10 @@
     .cvPop-width {
         max-width: 1000px;
     }
+    .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu{
+        #{$end-direction}: -50%;
+        min-width: 240px;
+    }
 }
 
 // under 1200px
@@ -227,6 +231,14 @@
     .leadership .ELM-tabs1-cont {
         padding: 20px;
     }
+    .menuWithBanner .navbarMenu .nav-item.dropdown:nth-child(2) .dropdown-menu {
+        #{$end-direction}: -900%;
+    }
+    .menuWithBanner .navbarMenu .nav-item.dropdown:nth-child(3) .dropdown-menu {
+        #{$end-direction}: -800%;
+    }
+
+
     .leadership .ELM-tabs1-cont .leadershipCard .img-box {
         width: 180px;
         height: 210px;
@@ -518,6 +530,9 @@
 @media(max-width: 991.98px) {
     body{
         padding-top: 111px;
+    }
+    .menuWithBanner .navbarMenu .navbar-nav .nav-link.active::before{
+        display: none;
     }
     .menuWithBanner .topnav ul{
         margin-bottom: 0;
