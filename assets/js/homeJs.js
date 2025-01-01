@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    // Partners Slider 
+    // news Slider 
     $('.owl-carousel-news').owlCarousel({
       loop: false,
       margin: 20,

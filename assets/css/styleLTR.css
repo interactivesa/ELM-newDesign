@@ -1064,6 +1064,15 @@ img {
   background-color: #FCFCFE;
   padding-top: 150px;
   padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-news .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home-news .main-box {
@@ -1113,6 +1122,18 @@ img {
   position: relative;
 }
 
+.home-news .owl-carousel-news .news-card .img-box {
+  width: 100%;
+  height: 210px;
+}
+
+.home-news .owl-carousel-news .news-card .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .home-news .owl-carousel-news .news-card h4.date {
   position: absolute;
   width: 100%;
@@ -1122,6 +1143,12 @@ img {
   font-size: 26px;
   color: #FFF;
   margin-bottom: 0;
+}
+
+.home-news .owl-carousel-news .news-card h4.date a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
 }
 
 .home-news .owl-dots {
@@ -1486,7 +1513,7 @@ img {
   content: "";
   position: absolute;
   right: 8px;
-  top: 5px;
+  top: 9px;
   height: 11px;
   width: 10px;
   background-image: url(../images/shared/old-chevron-left-3.svg);
@@ -1585,6 +1612,7 @@ img {
   height: 100px;
   -webkit-transition: .3s;
   transition: .3s;
+  text-decoration: none;
 }
 
 .mediaRel-main .btn-shaped span {
@@ -2671,6 +2699,101 @@ html[lang="en-US"] .elm-trip {
   direction: ltr;
 }
 
+html[lang="en-US"] .home-tatawor .main-box h3,
+html[lang="en-US"] .ourImpact .main-box h3,
+html[lang="en-US"] .home-ebtkar .main-box h3,
+html[lang="en-US"] .digital .main-box h3,
+html[lang="en-US"] .ourNum .main-box h3,
+html[lang="en-US"] .persevering .main-box h3,
+html[lang="en-US"] .home-Investors .main-box h3,
+html[lang="en-US"] .home-news .main-box h3,
+html[lang="en-US"] .elm-trip h3,
+html[lang="en-US"] .mediaRel-main .main-box h3,
+html[lang="en-US"] .logo-details .main-box h3,
+html[lang="en-US"] .download-logo .main-box h3,
+html[lang="en-US"] .logo-colors .main-box h3 {
+  font-size: 60px;
+  line-height: 1;
+}
+
+html[lang="en-US"] .home-tatawor .main-box p,
+html[lang="en-US"] .home-ebtkar .main-box p,
+html[lang="en-US"] .persevering .main-box p,
+html[lang="en-US"] .home-Investors .main-box p,
+html[lang="en-US"] .home-news .main-box p,
+html[lang="en-US"] .download-logo .main-box p {
+  font-size: 28px;
+  line-height: 1;
+}
+
+html[lang="en-US"] .btn-withShape a {
+  font-size: 25px;
+}
+
+html[lang="en-US"] .leadership .ELM-tabs1 .nav-item .nav-link {
+  font-size: 25px;
+}
+
+html[lang="en-US"] .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title1 {
+  font-size: 18px;
+}
+
+html[lang="en-US"] .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .name {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title2 {
+  font-size: 17px;
+}
+
+html[lang="en-US"] .menuWithBanner .navbarMenu .navbar-nav .nav-link {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li h4 {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a {
+  font-size: 18px;
+}
+
+html[lang="en-US"] .footer .FooterLinks h4 {
+  font-size: 30px;
+}
+
+html[lang="en-US"] .footer .FooterLinks ul li a {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .footer .FooterLinks.with-icon a {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .footer .btm-footer .footer-last .dir-links li a {
+  font-size: 22px;
+}
+
+html[lang="en-US"] .mediaRel-main .btn-shaped {
+  font-size: 22px;
+}
+
+html[lang="en-US"] .logo-details .logo-with-lines .contentAb h5 {
+  font-size: 20px;
+}
+
+html[lang="en-US"] .logo-details .logo-with-lines .contentAb p {
+  font-size: 18px;
+}
+
+html[lang="en-US"] .logo-colors .content-box .logoColorCard .cont-box h5 {
+  font-size: 22px;
+}
+
+html[lang="en-US"] .logo-colors .content-box .logoColorCard .cont-box p {
+  font-size: 18px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1360px !important;
@@ -2683,6 +2806,18 @@ html[lang="en-US"] .elm-trip {
   }
   .container2 {
     max-width: 1260px !important;
+  }
+}
+
+@media (min-width: 2000px) {
+  * {
+    scroll-padding-top: 200px;
+  }
+  .container {
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    -webkit-transform-origin: 60% 0;
+            transform-origin: 60% 0;
   }
 }
 

@@ -1047,8 +1047,14 @@ img{
   background-color: $colorOpacity2;
   padding-top: 150px;
   padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
   .img-box{
-    img{}
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .main-box{
     display: flex;
@@ -1081,7 +1087,14 @@ img{
     .news-card{
       position: relative;
       .img-box{
-        img{}
+        width: 100%;
+        height: 210px;
+
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
       h4.date{
         position: absolute;
@@ -1092,6 +1105,11 @@ img{
         font-size: 26px;
         color: $white;
         margin-bottom: 0;
+        a{
+          font-size: inherit;
+          color: inherit;
+          text-decoration: none;
+        }
       }
     }
   }
@@ -1413,7 +1431,7 @@ img{
           content: "";
           position: absolute;
           #{$end-direction}: 8px;
-          top: 5px;
+          top: 9px;
           height: 11px;
           width: 10px;
           background-image: url(../images/shared/old-chevron-left-3.svg);
@@ -1492,6 +1510,7 @@ img{
     padding-#{$end-direction}: 30px;
     height: 100px;
     transition: .3s;
+    text-decoration: none;
     span{
       font-size: inherit;
       font-family: inherit;
@@ -2439,4 +2458,83 @@ html[lang="en-US"]{
   {
     direction: ltr;
   }
+
+  .home-tatawor .main-box h3,
+    .ourImpact .main-box h3,
+    .home-ebtkar .main-box h3,
+    .digital .main-box h3,
+    .ourNum .main-box h3,
+    .persevering .main-box h3,
+    .home-Investors .main-box h3,
+    .home-news .main-box h3,
+    .elm-trip h3 ,
+    .mediaRel-main .main-box h3 ,
+    .logo-details .main-box h3 ,
+    .download-logo .main-box h3 ,
+    .logo-colors .main-box h3{
+        font-size: 60px;
+        line-height: 1;
+    }
+    .home-tatawor .main-box p,
+    .home-ebtkar .main-box p,
+    .persevering .main-box p,
+    .home-Investors .main-box p,
+    .home-news .main-box p,
+    .download-logo .main-box p{
+        font-size: 28px;
+        line-height: 1;
+    }
+    .btn-withShape a{
+        font-size: 25px;
+    }
+    .leadership .ELM-tabs1 .nav-item .nav-link {
+      font-size: 25px;
+    }
+    .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title1 {
+      font-size: 18px;
+    }
+    .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .name {
+      font-size: 20px;
+    }
+    .leadership .ELM-tabs1-cont .leadershipCard .content-box .details-area .title2 {
+      font-size: 17px;
+    }  
+
+    .menuWithBanner .navbarMenu .navbar-nav .nav-link{
+      font-size: 20px;
+    }
+    .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li h4{
+      font-size: 20px;
+    }
+    .menuWithBanner .navbarMenu .nav-item.dropdown .dropdown-menu ul li a{
+      font-size: 18px;
+    }
+    .footer .FooterLinks h4 {
+      font-size: 30px;
+    }
+    .footer .FooterLinks ul li a {
+      font-size: 20px;
+    }
+    .footer .FooterLinks.with-icon a {
+      font-size: 20px;
+    }
+    .footer .btm-footer .footer-last .dir-links li a {
+      font-size: 22px;
+    }
+    .mediaRel-main .btn-shaped{
+      font-size: 22px;
+    }
+
+    .logo-details .logo-with-lines .contentAb h5 {
+      font-size: 20px;
+    }
+    .logo-details .logo-with-lines .contentAb p {
+      font-size: 18px;
+    }
+    .logo-colors .content-box .logoColorCard .cont-box h5 {
+      font-size: 22px;
+    }
+    .logo-colors .content-box .logoColorCard .cont-box p {
+      font-size: 18px;
+    }
 }
