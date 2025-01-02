@@ -3791,6 +3791,9 @@ html[lang="en-US"] .menuWithBanner .topnav ul li a {
     padding: 0;
     height: 60px;
   }
+  .menuWithBanner .navbar-toggler {
+    min-width: 60px;
+  }
 }
 
 @media (max-width: 767.98px) {
