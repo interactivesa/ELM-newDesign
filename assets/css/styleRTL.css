@@ -2933,6 +2933,14 @@ html[lang="en-US"] .logo-colors .content-box .logoColorCard .cont-box p {
   font-size: 18px;
 }
 
+html[lang="en-US"] .menuWithBanner .topnav ul.end {
+  gap: 6%;
+}
+
+html[lang="en-US"] .menuWithBanner .topnav ul li a {
+  font-size: 18px;
+}
+
 @media (min-width: 1400px) {
   .container {
     max-width: 1360px !important;
@@ -3777,6 +3785,11 @@ html[lang="en-US"] .logo-colors .content-box .logoColorCard .cont-box p {
   .elm-trip .main-trip-content .years-cont p {
     line-height: 1;
     font-size: 20px;
+  }
+  .menuWithBanner .modalSearch .modal-dialog .modal-content .SearchCustom {
+    width: 100%;
+    padding: 0;
+    height: 60px;
   }
 }
 

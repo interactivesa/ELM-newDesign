@@ -888,6 +888,11 @@
             font-size: 20px;
         }
     }
+    .menuWithBanner .modalSearch .modal-dialog .modal-content .SearchCustom {
+        width: 100%;
+        padding: 0;
+        height: 60px;
+    }
 }
 // under 768px
 @media(max-width: 767.98px) {
