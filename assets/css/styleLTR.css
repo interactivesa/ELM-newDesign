@@ -2245,6 +2245,10 @@ img {
   position: relative;
 }
 
+.leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title2 div {
+  display: inline;
+}
+
 .leadership .ELM-tabs1-cont .hidden-popup .main-top .content .title2::before {
   content: '|';
   padding: 0 5px;

@@ -1971,6 +1971,9 @@ img{
             color: $text1;
             display: inline-block;
             position: relative;
+            div{
+              display: inline;
+            }
             &::before{
               content: '|';
               padding: 0 5px;
