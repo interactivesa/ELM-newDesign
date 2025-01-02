@@ -2182,7 +2182,7 @@ img {
   height: auto;
 }
 
-.leadership .ELM-tabs1-cont .hidden-popup .close {
+.leadership .ELM-tabs1-cont .hidden-popup .btn-close {
   width: 18px;
   height: 18px;
   position: absolute;
@@ -2716,8 +2716,8 @@ img {
 }
 
 .cvPop-width {
-  max-width: 1300px;
-  margin-top: 12%;
+  max-width: 1300px !important;
+  margin-top: 12% !important;
 }
 
 .cvPop-width .modal-content {
