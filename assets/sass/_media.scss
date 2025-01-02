@@ -15,14 +15,18 @@
     }
    
 }
-@media(min-width:2000px) {
+@media(min-width:2500px) {
     * {
         scroll-padding-top: 200px;
     }
 
-     .container{
-        transform: scale(1.3);
-        transform-origin: 60% 0;
+    div#s4-workspace {
+        transform: scale(1.5);
+        transform-origin: 100% 0;
+        width: 66.7%;
+    }
+    body{
+        padding-top: 0;
     }
    
 }

@@ -246,74 +246,7 @@ img{
    gap: 30px;
    .nav-item{
 
-    // &.dropdown{
-    //   position: unset;
-    //   .dropdown-menu{
-    //     border: unset;
-    //     padding: 32px 0;
-    //     border-radius: 8px;
-    //     box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
-    //     #{$end-direction}: 0;
-    //     min-width: 100%;
-    //     width: auto;
-    //     top: 72px;
-    //     #{$start-direction}:0;
-    //     text-align: #{$start-direction};
-    //     // background-color: var(--themes-background-background-SA-flag);
-    //     border-radius: 0;
-    //     min-height: 275px;
-
-    //     .cont1280{
-    //       max-width: 1280px;
-    //     }
-    //     h4.title {
-    //       margin-bottom: 12px;
-    //       // font-size: var(--text-lg-bold-font-size);
-    //       // font-weight: var(--text-lg-bold-font-weight);
-    //       // letter-spacing: var(--text-lg-bold-letter-spacing);
-    //       // line-height: var(--text-lg-bold-line-height);
-    //       // color: var(--themes-text-text-oncolor-primary);
-    //     }
-    //     ul{
-    //       li{
-    //         min-height: 40px;
-    //         // border-radius:var(--radius-radius-md) ;
-    //         // margin-bottom: var(--spacing-spacing-xs);
-    //         // padding: var(--spacing-spacing-md) var(--spacing-spacing-xl) var(--spacing-spacing-md) var(--spacing-spacing-xl);
-    //         gap: var(--spacing-spacing-xl);
-    //         padding-#{$start-direction}:0 ;
-            
-    //         a{
-    //           position: relative;
-    //           // font-weight: var(--text-md-medium-font-weight);
-    //           // font-size: var(--text-md-medium-font-size);
-    //           // letter-spacing: var(--text-md-medium-letter-spacing);
-    //           // line-height: var(--text-md-medium-line-height);
-    //           // color: var(--themes-text-text-oncolor-primary);
-    //           background-color: transparent;
-    //           padding-#{$start-direction}:40px ;
-    //           // white-space: inherit;
-    //           &::before{
-    //             content: "";
-    //             position: absolute;
-    //             #{$start-direction}:0;
-    //             top: 3px;
-    //             width: 24px;
-    //             height: 24px;
-    //             // background-image: url(../images/shared/checkmark-square-02.svg);
-    //             background-repeat: no-repeat;
-    //             background-size: contain;
-    //           }
-    //         }
-
-    //         &:last-child{
-    //           margin-bottom: 0;
-    //         }
-    //       }
-    //     }
-    //   }
-    
-    // }
+   
    }
 
 
@@ -378,6 +311,94 @@ img{
     }
   }
 
+  }
+
+
+  .modalSearch {
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    $color_1: #002d2e;
+  
+    .SearchCustom {
+      height: 74px;
+      width: 100%;
+      border-radius: 16px;
+      padding-#{$start-direction}: 30px;
+      padding-#{$end-direction}: 2px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      width: 100%;
+      .forGroup {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+      .searchInput {
+        height: 100%;
+        width: 80%;
+        background: $white;
+        font-size: 20px;
+        font-family: 'font-Reg';
+        color: $text1;
+        padding: 20px;
+        margin-#{$end-direction}: 20px;
+        &::placeholder {
+          color: var(--themes-form-field-text-placeholder);
+          font-size: var(--text-md-regular-font-size);
+        }
+      }
+      .boxClose {
+        display: flex;
+        justify-content: center;
+        margin-top: 31px;
+        button {
+          opacity: 1;
+          img{
+            width: 33px;
+            filter: grayscale(1) brightness(8);
+          }
+        }
+      }
+    }
+  
+    .searchSubmit {
+      height: 100%;
+      width: 71px;
+      background-color: $text1;
+      gap: 16px;
+      border-radius: 4px;
+      border: unset;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img{
+        filter: grayscale(1) brightness(8);
+      }
+    }
+    .modal-dialog {
+      max-width: 800px;
+      min-height: calc(60vh - 60px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: auto;
+      .modal-content {
+        background: transparent;
+        border: unset;
+        .SearchCustom {
+          width: 750px;
+        }
+      }
+    }
+    button {
+      &.btn {
+        background: transparent;
+        border: unset;
+        background: transparent;
+        border: unset;
+      }
+    }
   }
 }
 /////////////////////////

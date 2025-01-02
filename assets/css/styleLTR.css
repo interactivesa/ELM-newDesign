@@ -377,6 +377,141 @@ img {
   background-size: contain;
 }
 
+.menuWithBanner .modalSearch {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menuWithBanner .modalSearch .SearchCustom {
+  height: 74px;
+  width: 100%;
+  border-radius: 16px;
+  padding-left: 30px;
+  padding-right: 2px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 100%;
+}
+
+.menuWithBanner .modalSearch .SearchCustom .forGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.menuWithBanner .modalSearch .SearchCustom .searchInput {
+  height: 100%;
+  width: 80%;
+  background: #FFF;
+  font-size: 20px;
+  font-family: 'font-Reg';
+  color: #0C1D46;
+  padding: 20px;
+  margin-right: 20px;
+}
+
+.menuWithBanner .modalSearch .SearchCustom .searchInput::-webkit-input-placeholder {
+  color: var(--themes-form-field-text-placeholder);
+  font-size: var(--text-md-regular-font-size);
+}
+
+.menuWithBanner .modalSearch .SearchCustom .searchInput:-ms-input-placeholder {
+  color: var(--themes-form-field-text-placeholder);
+  font-size: var(--text-md-regular-font-size);
+}
+
+.menuWithBanner .modalSearch .SearchCustom .searchInput::-ms-input-placeholder {
+  color: var(--themes-form-field-text-placeholder);
+  font-size: var(--text-md-regular-font-size);
+}
+
+.menuWithBanner .modalSearch .SearchCustom .searchInput::placeholder {
+  color: var(--themes-form-field-text-placeholder);
+  font-size: var(--text-md-regular-font-size);
+}
+
+.menuWithBanner .modalSearch .SearchCustom .boxClose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 31px;
+}
+
+.menuWithBanner .modalSearch .SearchCustom .boxClose button {
+  opacity: 1;
+}
+
+.menuWithBanner .modalSearch .SearchCustom .boxClose button img {
+  width: 33px;
+  -webkit-filter: grayscale(1) brightness(8);
+          filter: grayscale(1) brightness(8);
+}
+
+.menuWithBanner .modalSearch .searchSubmit {
+  height: 100%;
+  width: 71px;
+  background-color: #0C1D46;
+  gap: 16px;
+  border-radius: 4px;
+  border: unset;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuWithBanner .modalSearch .searchSubmit img {
+  -webkit-filter: grayscale(1) brightness(8);
+          filter: grayscale(1) brightness(8);
+}
+
+.menuWithBanner .modalSearch .modal-dialog {
+  max-width: 800px;
+  min-height: calc(60vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: auto;
+}
+
+.menuWithBanner .modalSearch .modal-dialog .modal-content {
+  background: transparent;
+  border: unset;
+}
+
+.menuWithBanner .modalSearch .modal-dialog .modal-content .SearchCustom {
+  width: 750px;
+}
+
+.menuWithBanner .modalSearch button.btn {
+  background: transparent;
+  border: unset;
+  background: transparent;
+  border: unset;
+}
+
 @media (min-width: 992px) {
   .menuWithBanner .navbarMenu .nav-item.dropdown {
     position: relative;
@@ -2809,15 +2944,19 @@ html[lang="en-US"] .logo-colors .content-box .logoColorCard .cont-box p {
   }
 }
 
-@media (min-width: 2000px) {
+@media (min-width: 2500px) {
   * {
     scroll-padding-top: 200px;
   }
-  .container {
-    -webkit-transform: scale(1.3);
-            transform: scale(1.3);
-    -webkit-transform-origin: 60% 0;
-            transform-origin: 60% 0;
+  div#s4-workspace {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 100% 0;
+            transform-origin: 100% 0;
+    width: 66.7%;
+  }
+  body {
+    padding-top: 0;
   }
 }
 

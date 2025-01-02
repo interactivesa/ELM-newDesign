@@ -86,7 +86,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ">
-                       <a class="nav-link search-icon" href="#" >
+                       <a class="nav-link search-icon" href="javascript:;" data-bs-toggle="modal" data-bs-target="#searchModal">
                         <img src="../assets/images/shared/search-icon.svg" alt="">
                       </a>
                     </li>
@@ -219,6 +219,34 @@
     </div>
     
     
+    <div class="modal modalSearch fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="SearchCustom">
+              <div class="forGroup">
+                <input
+                  type="text"
+                  class="searchInput"
+                  value=""
+                  placeholder="أدخل كلمة البحث..."
+                />
+                <button type="submit" class="searchSubmit">
+                  <img src="../assets/images/shared/search-icon.svg" alt="" />
+                </button>
+              </div>
+              <div class="boxClose">
+                <button
+                button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+                >
+                  <img src="../assets/images/shared/close-icon.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </section>
 
