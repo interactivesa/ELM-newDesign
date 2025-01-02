@@ -2759,7 +2759,8 @@ img {
   display: none;
 }
 
-html[lang="en-US"] .elm-trip .trip-nav div img {
+html[lang="en-US"] .elm-trip .trip-nav div img,
+html[lang="en-US"] .breadcrumb .items li a::after {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }

@@ -2423,7 +2423,8 @@ img{
 
 
 html[lang="en-US"]{
-  .elm-trip .trip-nav div img{
+  .elm-trip .trip-nav div img ,
+  .breadcrumb .items li a::after{
     transform: scaleX(-1);
   }
   .elm-trip .cards-cont .trip-card .img-box{
@@ -2568,4 +2569,5 @@ html[lang="en-US"]{
     .menuWithBanner .topnav ul li a{
       font-size: 18px;
     }
+    
 }
